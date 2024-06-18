@@ -1,0 +1,12 @@
+@import './vars.scss';
+.header{
+    padding: 30px 0;
+    background-color: $headerBack;
+}
+.menu__list{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    column-gap: 75px;
+    align-items: center;
+}

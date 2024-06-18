@@ -13,19 +13,14 @@ export default (env) => {
   return {
     mode: env.mode ?? "development",
     entry: {
-      main: ["@babel/polyfill", path.resolve(__dirname, "./src/public/index/index-entry.js")],
-      second: ["@babel/polyfill", path.resolve(__dirname, "./src/public/second/second-entry.js")],
+      main: ["@babel/polyfill", path.resolve(__dirname, "./src/index/index-entry.js")],
+      // second: ["@babel/polyfill", path.resolve(__dirname, "./src/second/second-entry.js")],
     },
     plugins: [
       new HtmlWebpackPlugin({
         filename: 'index.html',
-        template: path.resolve(__dirname, "./src/public/index/index.html"),
+        template: path.resolve(__dirname, "./src/index/index.html"),
         chunks: ['main'],
-      }),
-      new HtmlWebpackPlugin({
-        filename: 'second.html',
-        template: path.resolve(__dirname, "./src/public/second/second.html"),
-        chunks: ['second'],
       }),
       new MiniCssExtractPlugin({
         filename: isDev ? "[name].css" : "css/[name][contenthash].css",
