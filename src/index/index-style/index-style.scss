@@ -13,6 +13,10 @@
 .moya-cat {
     width: 500px;
     height: auto;
+
+    &.hidden {
+        opacity: 0;
+    }
 }
 .toggle-button {
 }
