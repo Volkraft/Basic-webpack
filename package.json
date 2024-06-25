@@ -53,6 +53,7 @@
     "@babel/polyfill": "^7.12.1",
     "ajv": "^8.16.0",
     "ajv-keywords": "^5.1.0",
+    "gsap": "^3.12.5",
     "normalize.css": "^8.0.1"
   }
 }
